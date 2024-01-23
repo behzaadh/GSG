@@ -2,7 +2,7 @@
 #include "GSGfile.h"
 
 int main() {
-    GsgOutput out = readGsgAll("reservoir.GSG");
+    GsgOutput out = readGsg("reservoir.GSG");
     /*
     for (int i = 0; i < out.headers.size(); ++i) {
         if (out.headers[i] == "PRESSURE") {
@@ -26,7 +26,7 @@ int main() {
     out2.dataVector.push_back(data);
     writeGsg("reservoir.GSG", keywords, out2);
 
-    GsgOutput out3 = readGsgAll("reservoir.GSG");
+    GsgOutput out3 = readGsg("reservoir.GSG");
     /*
     for (int i = 0; i < out3.headers.size(); ++i) {
         if (out3.headers[i] == "TEMPERATURE" || out3.headers[i] == "PRESSURE") {

@@ -49,7 +49,7 @@ int getStartIndex(std::ifstream& file) {
     return noProp ? -1 : idx_start;
 }
 // Function to read GSG file and extract data
-GsgOutput readGsgAll(const std::string& filename) {
+GsgOutput readGsg(const std::string& filename) {
     // Open the file in binary mode
     std::ifstream file{filename, std::ios::binary};
 

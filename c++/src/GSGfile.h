@@ -37,7 +37,7 @@ int getStartIndex(std::ifstream& file);
  * @param filename The path to the GSG file.
  * @return The GsgOutput object containing the data read from the file.
  */
-GsgOutput readGsgAll(const std::string& filename);
+GsgOutput readGsg(const std::string& filename);
 /**
  * Writes GSG data to a file.
  *

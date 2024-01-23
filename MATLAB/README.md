@@ -1,11 +1,8 @@
-# GSG
-Reading SLB Generic Simulation Grid (gsg) file format 
-
 # MATLAB Functions for GSG File Format (.gsg File)
 
 ## Overview
 
-The provided MATLAB functions to reading SLB Generic Simulation Grid (gsg) file format . These functions are designed to read and write various parameters from and to .gsg files, respectively. The primary objective is to facilitate the extraction and modification of Intersect restart file formats.
+The MATLAB functions provides functionality to read and extract data from SLB Generic Simulation Grid (gsg) file format . These functions are designed to read and write various parameters from and to .gsg files, respectively. The primary objective is to facilitate the extraction and modification of Intersect restart file formats.
 
 ## Functions
 

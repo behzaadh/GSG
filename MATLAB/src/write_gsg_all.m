@@ -1,3 +1,12 @@
+%% The new reservoir Intersect simulator employs the .gsg file format as a 
+% restart file. This file aims to overwrite specified parameters to .gsg 
+% such as Intersect restart file format.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     Behzad Hosseinzadeh                                %
+%                     contact: behzadh@dtu.dk                            %
+%                     version: v1.0                                      %
+%                     Date: 2024-01-22                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function write_gsg_all(filename,out,fieldName)
 % filename = 'reservoir.gsg';
 

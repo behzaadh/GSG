@@ -1,5 +1,6 @@
 // Purpose: Read GSG file and extract data.
 #include "GSGfile.h"
+#include <memory>
 
 std::string readKeyword(std::ifstream& file){
     // Read the size of the header
@@ -7,10 +8,11 @@ std::string readKeyword(std::ifstream& file){
     file.read(reinterpret_cast<char*>(&sizeHeader), sizeof(int));
 
     // Read the keyword
-    char* keywordBuffer = new char[sizeHeader];
-    file.read(keywordBuffer, sizeHeader);
-    std::string keyword(keywordBuffer, sizeHeader);
-    delete[] keywordBuffer;
+    // char* keywordBuffer = new char[sizeHeader];
+    std::unique_ptr<char[]> keywordBuffer(new char[sizeHeader]);
+    file.read(keywordBuffer.get(), sizeHeader);
+    std::string keyword(keywordBuffer.get(), sizeHeader);
+    // delete[] keywordBuffer;
 
     // Remove whitespaces and replace '[' and ']' with '_'
     keyword.erase(std::remove_if(keyword.begin(), keyword.end(), ::isspace), keyword.end());

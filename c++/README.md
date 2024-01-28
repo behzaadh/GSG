@@ -54,4 +54,4 @@ This C++ code provides functionality to read and extract data from SLB Generic S
 - `writeGsg(const std::string& filename, std::streampos idx_start, int64_t type, const GsgData& data)`function is called by `writeGsg(const std::string& filename, const std::vector<std::string>& keywords, const GsgOutput& data)` function and is not intended for standalone use.
 - Ensure the GSG file path is correctly provided.
 
-Feel free to contact me (behzadh@dtu.dk) for any questions or assistance.
+Feel free to contact me (bdhosseinzadeh@gmail.com) for any questions or assistance.

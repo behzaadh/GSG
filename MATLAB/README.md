@@ -38,4 +38,4 @@ write_gsg_all('reservoir.gsg', input, ["TEMPERATURE"]);
 - `write_gsg(filename, idx_start, data)`function is called by write_gsg_all.m and is not intended for standalone use.
 -  Ensure the correct file paths are provided.
 
-Feel free to contact me (behzadh@dtu.dk) for any questions or assistance.
+Feel free to contact me (bdhosseinzadeh@gmail.com) for any questions or assistance.
